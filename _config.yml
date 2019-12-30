@@ -1,7 +1,7 @@
 # --- General options --- #
 
 # Name of website
-title: My website
+title: Bob Yang
 
 # Short description of your site
 description: A virtual proof that I'm awesome
@@ -68,9 +68,9 @@ author:
 # If you want to add a new link that isn't here, you'll need to also edit the file _data/SocialNetworks.yml
 social-network-links:
   rss: true
-  email: "someone@example.com"
+  email: "1872632745@qq.com"
   facebook: deanattali
-  github: daattali
+  github: ydbB
   twitter: daattali
 #  reddit: yourname
 #  linkedin: daattali
