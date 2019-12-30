@@ -11,6 +11,6 @@ image: /img/hello_world.jpeg
 
 [maxWaterContainer][maxWater]
 
-[maxWater]: "盛最多水的容器11"
+[maxWater]: "../leetcode/移动零238/"
 
 
