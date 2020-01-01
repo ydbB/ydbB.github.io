@@ -9,6 +9,5 @@ image: /img/hello_world.jpeg
 >2.学会安排时间  
 >3.改变自己的学习方式  
 
-[maxWaterContainer][maxWater]
-
-[maxWater]: "../leetcode/移动零238/
+[moveZeros]({% post_url ../leetcode/../../../leetcode/移动零238 %})
+[threeSum]({% post_url 2019-12-三数之和15 %})
