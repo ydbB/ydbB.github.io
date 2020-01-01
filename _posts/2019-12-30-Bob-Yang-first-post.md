@@ -10,4 +10,4 @@ image: /img/hello_world.jpeg
 >3.改变自己的学习方式  
 
 [moveZeros]({% post_url ../leetcode/../../../leetcode/移动零238 %})
-[threeSum]({% post_url 2019-12-三数之和15 %})
+[threeSum]({% post_url 2019-12-31-三数之和15 %})
