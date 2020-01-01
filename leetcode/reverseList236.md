@@ -1,0 +1,43 @@
+# reverseList
+反转一个单链表。
+
+示例:
+
+输入: 1->2->3->4->5->NULL
+输出: 5->4->3->2->1->NULL
+
+### 题解
+1.循环解法：
+```java
+ public ListNode reverseList(ListNode head) {
+     ListNode pre = null, cur = head, temp = null;
+     while (cur != null) {
+         temp = cur.next;
+         cur.next = pre;
+         pre = cur;
+         cur = temp;
+     }
+     return pre;
+ }
+ ```  
+ 思路如下图：  
+ ![思路1](../imgfromleetcode/reverseList.gif) 
+ 2.尾递归的思路  
+ ```java
+ public ListNode reverseList(ListNode head) {
+     if (head == null || head.next == null) {
+         return head;
+     }
+     ListNode pre = reverseList(head.next);
+     head.next.next = head;
+     //断开指针，不然在下一次时会成环
+     head.next = null;
+     return pre;
+ }
+ ```  
+ 思路2：
+
+ ![2](../imgfromleetcode/reverseList2.gif)
+
+
+[参考原链接](https://leetcode-cn.com/problems/reverse-linked-list/solution/dong-hua-yan-shi-206-fan-zhuan-lian-biao-by-user74/)

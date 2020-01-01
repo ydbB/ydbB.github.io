@@ -11,6 +11,4 @@ image: /img/hello_world.jpeg
 
 [maxWaterContainer][maxWater]
 
-[maxWater]: "../leetcode/移动零238/"
-
-
+[maxWater]: "../leetcode/移动零238/
