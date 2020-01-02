@@ -20,8 +20,10 @@ k 是一个正整数，它的值小于或等于链表的长度。
 
 来源：力扣（LeetCode）
 链接：https://leetcode-cn.com/problems/reverse-nodes-in-k-group
-著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。  
+著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。 
+
 1.递归
+
 ```java
 public ListNode reverseKGroup(ListNode head, int k) {
     if (head == null) return head;
@@ -48,7 +50,9 @@ private ListNode reverse(ListNode start, ListNode end) {
     return pre;
 }
 ```  
+
 2.另一种递归方式
+
 ```java
 public ListNode reverseKGroup(ListNode head, int k) {
     ListNode curr = head;
@@ -72,8 +76,11 @@ public ListNode reverseKGroup(ListNode head, int k) {
     return head;
 }
 ``` 
+
 3.非递归方式
+
 ```java
+
 public ListNode reverseKGroup(ListNode head, int k) {
         int n = 0;
         for (ListNode i = head; i != null; n++, i = i.next);
@@ -94,4 +101,5 @@ public ListNode reverseKGroup(ListNode head, int k) {
         return dmy.next;
     }
     ```  
+    
     
