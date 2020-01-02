@@ -81,7 +81,7 @@ public ListNode reverseKGroup(ListNode head, int k) {
 
 ```java
 
-public ListNode reverseKGroup(ListNode head, int k) {
+    public ListNode reverseKGroup(ListNode head, int k) {
         int n = 0;
         for (ListNode i = head; i != null; n++, i = i.next);
         
@@ -100,6 +100,6 @@ public ListNode reverseKGroup(ListNode head, int k) {
         }
         return dmy.next;
     }
-    ```  
+```  
     
     
