@@ -45,5 +45,5 @@ public void hello() {
 }
 ```  
 ###  居中
-![juzhong](../img/bgimage.png){: .center-block}
+![juzhong](../stars/wzx.jpg){: .center-block}
 
