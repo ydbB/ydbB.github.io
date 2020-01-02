@@ -1,7 +1,7 @@
 ---
 layout: post
 title: linked-list
-images: ../img/wangyuyan.png
+image: ../img/wangyuyan.png
 tags: [test]
 comment: true
 ---  
