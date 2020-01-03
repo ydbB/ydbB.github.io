@@ -48,7 +48,9 @@ title: 柱状图中的最大面积
  ```   
 
  {: .box-note}
- **Note:** 这里的时间复杂度为 $\mathbf{O(n ^ 3)}$ 会超时.  
+ **Note:** 这里的时间复杂度为 O(n ^ 3) 会超时. 
+
+
  2.优化版枚举边界  
  ``` java
 public static int largestRectangleArea(int[] height) {
@@ -63,8 +65,9 @@ public static int largestRectangleArea(int[] height) {
     return max;
 }
 ```  
+
 {: .box-note}
-**Note:** 时间复杂度为$\mathbf{O(n ^ 2)}$  
+**Note:** 时间复杂度为 O(n ^ 2) 
 
 3.枚举最小值点
 ```java
@@ -80,6 +83,7 @@ public static int largestRectangleArea(int[] height) {
     return max;
 }
 ```  
+
 {: .box-note}
 **Note:** 时间复杂度为 $\mathbf{O(n ^ 2)}$  
 
@@ -105,8 +109,10 @@ public static int largestRectangleArea(int[] height) {
     return max;
 }
 ```   
+
 {: .box-note}
-**Note:** 时间复杂度为 $\mathbf{O(n)}$
+**Note:** 时间复杂度为 O(n)
+
 
 5.用数组替换栈
 ```java
@@ -139,7 +145,7 @@ public static int largestRectangleArea(int[] height) {
 ```  
 
 {: .box-note}
-**Note:** 时间复杂度为 $\mathbf{O(n)}$  
+**Note:** 时间复杂度为 O(n) 
 
 
 {: .box-warning}
@@ -147,24 +153,3 @@ public static int largestRectangleArea(int[] height) {
 
 参考
 [官方题解](https://leetcode-cn.com/problems/largest-rectangle-in-histogram/solution/zhu-zhuang-tu-zhong-zui-da-de-ju-xing-by-leetcode/)
-
-public int  static int largestRectangleArea(int[] height) {
-    int max = 0;
-    Stack<Integer> stack = new Stack<Integer>();
-    stack.push(-1);
-    for (int i = 0; i < height; ++ i) {
-        //谈出大于height[i]的部分
-
-        while (stack.peek() != -1 && height[stack.peek()] >= height[i]) {
-            max = Math.max(max,height[stack.pop()] * (i - stack.peek() - 1))'
-        }
-        stack.push(i);
-    }
-
-    //弹出剩余栈中的数据,并计算
-
-    while (stack.peek() != -1) {
-        max = Math.max(max, hight[stack.pop()] * (height.length - stack.peek()));
-    }
-    return max;
-}

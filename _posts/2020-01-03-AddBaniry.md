@@ -20,6 +20,7 @@ title: 二进制求和
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。  
 ### 题解
 1,自己写的比较乱的版本
+
 ``` java
 public String addBinary(String a, String b) {
        int in = 0;
@@ -47,10 +48,12 @@ public String addBinary(String a, String b) {
         return sb.reverse().toString();  
     }
 ```   
+
  {: .box-note}
  **Note:** 思路:就是小学学到竖式加法.  
 
  2.大佬的解法(思路相同,但是简洁)  
+
  ``` java
  public String addBaniry(String a, String b) {
      StringBuilder sb = new StringBuilder();
@@ -65,7 +68,9 @@ public String addBinary(String a, String b) {
      return sb.reverse().toString();
  }
  ```   
+
  3.更改版  
+
  ```java
  public String addBaniry(String a, String b) {
      StringBuilder sb = new StringBuilder();
@@ -82,6 +87,6 @@ public String addBinary(String a, String b) {
      return sb.reverse().toString();
  }
  ```   
- 
+
  {: .box-Warning}
- **Warning:** 注意这里不要使用 $\mathtt{sb.append(sum - in)}$ 莫名bug,暂时不理解原因.
+ **Warning:** 注意这里不要使用 sb.append(sum - in) 莫名bug,暂时不理解原因.
