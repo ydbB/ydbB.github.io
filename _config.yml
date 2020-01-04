@@ -51,9 +51,9 @@ footer-link-col: "#404040"
 # Alternatively, the navbar, footer, and page background can be set to use background images
 # instead of colour
 
-# navbar-img: "/img/bgimage.png"
-# footer-img: "/img/bgimage.png"
-# page-img: "/img/bgimage.png"
+ navbar-img: "/img/bgimage.png"
+ footer-img: "/img/bgimage.png"
+ page-img: "/stars/wzx.jpg"
 
 # --- Footer options --- #
 
@@ -120,18 +120,18 @@ ba_track_id: 7daa920d6a43b23f38ca553dbb30d067
 #  opt-out: true
 
 # --- Comments --- #
-just-comments: true
+# just-comments: true
 ## gitalk
 gitalk:
-  enable: true
+  # enable: true
    clientID: 0798c3bde78328d91721
     #生成的clientSecret 
     clientSecret: 7ad6b2a3443ee297c551376ab083b1538f3f85e4
     #仓库名称  
     repo: ydbB/ydbB
     #github用户名  
-    owner: `ydbB`  
-    admin: `ydbB`  
+    owner: ydbB  
+    #admin: `ydbB`  
     #是否启用类似FB的阴影遮罩  
     distractionFreeMode: true
 
