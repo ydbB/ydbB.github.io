@@ -107,7 +107,7 @@ google_analytics: "UA-155330744-1"
 # Google Tag Manager ID
 gtm: "UA-155330744-1"
 # Baidu Analytics
-#ba_track_id: 7daa920d6a43b23f38ca553dbb30d067
+ba_track_id: 7daa920d6a43b23f38ca553dbb30d067
 
 
 # Matomo (aka Piwik) Web statistics
@@ -123,11 +123,11 @@ gtm: "UA-155330744-1"
 ## gitalk
 gitalk:
   enable: true
-   clientID: `613c01dbd1c6c972a88a`
+   clientID: 0798c3bde78328d91721
     #生成的clientSecret 
-    clientSecret: `32a11bb02fb30a85579f806a967e50b18b3c1412`
+    clientSecret: 7ad6b2a3443ee297c551376ab083b1538f3f85e4
     #仓库名称  
-    repo: `ydbB/ydbB`
+    repo: ydbB/ydbB
     #github用户名  
     owner: `ydbB`  
     admin: `ydbB`  
