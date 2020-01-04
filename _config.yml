@@ -121,15 +121,14 @@ ba_track_id: 7daa920d6a43b23f38ca553dbb30d067
 
 # --- Comments --- #
 ## gitalk
-# gitalk:
-#   enable: true
-#    clientID: `0798c3bde78328d91721`
-#     #生成的clientSecret 
-#     clientSecret: `7ad6b2a3443ee297c551376ab083b1538f3f85e4`
-#     #仓库名称  
-#     repo: `ydbB/ydbB`
-#     #github用户名  
-#     owner: `ydbB`  
+ gitalk:
+   clientID: 0798c3bde78328d91721
+    #生成的clientSecret 
+     clientSecret: 7ad6b2a3443ee297c551376ab083b1538f3f85e4
+     #仓库名称  
+     repo: ydbB/ydbB
+     #github用户名  
+     owner: ydbB  
 #     admin: `ydbB`  
 #     #是否启用类似FB的阴影遮罩  
 #     distractionFreeMode: true
