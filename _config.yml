@@ -1,6 +1,7 @@
 # --- General options --- #
-
+#
 # Name of website
+
 title: Bob Yang
 
 # Short description of your site
@@ -261,7 +262,7 @@ prose:
           help: "Add a thumbnail image to your post."
           placeholder: "Thumbnail"
           alterable: true
-      - name: "published"
+      - name: "published"  
         field:
           element: "checkbox"
           label: "Publish"
