@@ -105,9 +105,9 @@ url-pretty: "snowball.show"  # eg. "deanattali.com/beautiful-jekyll"
 google_analytics: "UA-155330744-1"
 
 # Google Tag Manager ID
-#gtm: ""
+gtm: "UA-155330744-1"
 # Baidu Analytics
-ba_track_id: 7daa920d6a43b23f38ca553dbb30d067
+#ba_track_id: 7daa920d6a43b23f38ca553dbb30d067
 
 
 # Matomo (aka Piwik) Web statistics
