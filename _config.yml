@@ -120,9 +120,9 @@ ba_track_id: 7daa920d6a43b23f38ca553dbb30d067
 #  opt-out: true
 
 # --- Comments --- #
+just-comments: true
 ## gitalk
  gitalk:
-      enable: true
      clientID: 0798c3bde78328d91721
     #生成的clientSecret 
      clientSecret: 7ad6b2a3443ee297c551376ab083b1538f3f85e4
