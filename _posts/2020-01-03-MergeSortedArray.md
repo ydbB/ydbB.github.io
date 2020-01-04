@@ -22,9 +22,9 @@ nums2 = [2,5,6],       n = 3
 著作权归领扣网络所有。商业转载请联系官方授权，非商业转载请注明出处。  
 
 {: .box-note}
-**Note:** 简单题，不在说明时间复杂度为 $\mathbf{O(NM)}$ 的代码。
+**Note:** 简单题，不在说明时间复杂度为 O(NM) 的代码。
 
-贴一个时间复杂度为：$\mathbf{O(N + M)}$ 的代码，  
+贴一个时间复杂度为：{O(N + M) 的代码，  
 ``` java
 public void merge(int[] nums1, int m, int[] nums2, int n) {
         int lastIndex = nums1.length - 1;

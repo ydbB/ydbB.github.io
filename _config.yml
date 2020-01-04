@@ -255,3 +255,18 @@ plugins:
 
 # Beautiful Jekyll / Dean Attali
 # 2fc73a3a967e97599c9763d05e564189
+
+
+## gitalk
+gitalk:
+  enable: true
+   clientID: `613c01dbd1c6c972a88a`
+    #生成的clientSecret 
+    clientSecret: `32a11bb02fb30a85579f806a967e50b18b3c1412`
+    #仓库名称  
+    repo: `ydbB/ydbB`
+    #github用户名  
+    owner: `ydbB`  
+    admin: `ydbB`  
+    #是否启用类似FB的阴影遮罩  
+    distractionFreeMode: true
