@@ -39,6 +39,11 @@
           <a href="http://{{- site.matomo.uri -}}/index.php?module=CoreAdminHome&action=optOut" target="_blank" class="text_muted">Do-not-Track</a>
         {% endif %}
       {% endif%}
+
+      {% if page.mathjax  %} 
+		<script type="text/javascript" src="https://basis-learning.github.io/MathJax/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  {% endif %}
+  
       </p>
           <!-- Please don't remove this, keep my open source work credited :) -->
     <p class="theme-by text-muted">

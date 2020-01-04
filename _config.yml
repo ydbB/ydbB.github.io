@@ -32,7 +32,7 @@ avatar: "/img/avatar.jpg"
 
 # If you want to have an image logo in the top-left corner instead of the title text,
 # then specify the following parameter
-# title-img: /path/to/image
+title-img: /img/wangyuyan.png
 
 # --- Background colour/image options --- #
 
@@ -122,7 +122,8 @@ ba_track_id: 7daa920d6a43b23f38ca553dbb30d067
 # --- Comments --- #
 ## gitalk
  gitalk:
-   clientID: 0798c3bde78328d91721
+      enable: true
+     clientID: 0798c3bde78328d91721
     #生成的clientSecret 
      clientSecret: 7ad6b2a3443ee297c551376ab083b1538f3f85e4
      #仓库名称  
