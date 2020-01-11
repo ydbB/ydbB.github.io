@@ -1,0 +1,98 @@
+---
+layout: post
+title: 全排列
+---
+给定一个没有重复数字的序列，返回其所有可能的全排列。 
+
+ 示例: 
+
+ 输入: [1,2,3]
+输出:
+[
+  [1,2,3],
+  [1,3,2],
+  [2,1,3],
+  [2,3,1],
+  [3,1,2],
+  [3,2,1]
+] 
+ Related Topics 回溯算法
+
+### 题解
+
+1. 容易理解的 DFS
+
+~~~ java
+    public List<List<Integer>> permute(int[] nums) {
+        List<List<Integer>> list = new ArrayList<>();
+        // Arrays.sort(nums); // not necessary
+        backtrack(list, new ArrayList<>(), nums);
+        return list;
+    }
+
+    private void backtrack(List<List<Integer>> list, List<Integer> tempList, int [] nums){
+        if(tempList.size() == nums.length){
+            list.add(new ArrayList<>(tempList));
+        } else{
+            for(int i = 0; i < nums.length; i++){
+                if(tempList.contains(nums[i])) continue; // element already exists, skip
+                tempList.add(nums[i]);
+                backtrack(list, tempList, nums);
+                tempList.remove(tempList.size() - 1);
+            }
+        }
+    }
+~~~   
+
+2. 迭代
+
+~~~ java
+public List<List<Integer>> permute(int[] num) {
+    List<List<Integer>> ans = new ArrayList<List<Integer>>();
+    if (num.length ==0) return ans;
+    List<Integer> l0 = new ArrayList<Integer>();
+    l0.add(num[0]);
+    ans.add(l0);
+    for (int i = 1; i< num.length; ++i){
+        List<List<Integer>> new_ans = new ArrayList<List<Integer>>();
+        for (int j = 0; j<=i; ++j){
+            for (List<Integer> l : ans){
+                List<Integer> new_l = new ArrayList<Integer>(l);
+                new_l.add(j,num[i]);
+                new_ans.add(new_l);
+            }
+        }
+        ans = new_ans;
+    }
+    return ans;
+}
+~~~  
+
+3.效率高的 DFS
+
+~~~　java
+public List<List<Integer>> permute(int[] nums) {
+    List<List<Integer>> res = new ArrayList<>();
+    backTrack(nums, 0, res);
+    return res;
+}
+
+    private void backTrack(int[] nums, int pos, List<List<Integer>> res){
+        if (pos == nums.length){
+            List<Integer> list = new ArrayList<>();
+            for (int i = 0; i < nums.length; i++)
+                list.add(nums[i]);
+            res.add(list);
+        }
+        for (int i = pos; i < nums.length; i++){
+            swap(nums, pos, i);
+            backTrack(nums, pos+1, res);
+            swap(nums, pos, i);
+        }
+    }
+    private void swap(int[] nums, int i, int j){
+        int temp = nums[i];
+        nums[i] = nums[j];
+        nums[j] = temp;
+    }
+~~~   
