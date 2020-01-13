@@ -1,7 +1,7 @@
 ---
 layout: post
 title: 全排列II
-subtitle: 是时候拥抱新世界了!!! Lazy-Bob!!!
+subtitle: 是时候拥抱新世界了!!! Laz
 ---
 给定一个可包含重复数字的序列，返回所有不重复的全排列。
 
